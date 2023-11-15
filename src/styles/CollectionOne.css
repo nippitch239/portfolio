@@ -1,0 +1,30 @@
+.CollectionAuth {
+  .text {
+    width: 100%;
+    height: auto;
+    font-size: 59px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    .imageW {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px;
+      .boximage {
+        width: 40%;
+        height: 500px;
+        background-color: #ff6767;
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

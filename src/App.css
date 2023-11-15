@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500&family=Mitr:wght@200;300;400;500&family=Monoton&family=Noto+Sans+TC:wght@200;300;400;500&family=Orbit&family=Quicksand:wght@300;400;500;600&display=swap");
+
+:root {
+  /* FONT ^ TEXT  */
+  --font-Chinese: "Noto Sans TC";
+  --font-Korea: "Orbit";
+  --font-Thai: "IBM Plex Sans Thai Looped";
+  --font-BuildIn: "Monoton", cursive;
+  --font-default: "Mitr", sans-serif;
+  --font-default2: "BADABB_", sans-serif;
+  --font-default3: "FONTSPRING-DEMO-TT_FORS_BLACK_OUTLINE";
+
+  /*-----------------------------------------*/
+
+  /* Theme ^ Color */
+  --Theme-Background-color: rgb(252, 252, 252);
+
+  /*-----------------------------------------*/
+  scroll-behavior: smooth;
+}
+
+/* Import Fonts */
+@font-face {
+  font-family: "BADABB_";
+  src: url(Fonts/BADABB_.TTF) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "FONTSPRING-DEMO-TT_FORS_BLACK_OUTLINE";
+  src: url(Fonts/FONTSPRING-DEMO-TT_FORS_BLACK_OUTLINE.OTF) format("truetype");
+  font-weight: normal;
+}
+
+/* ------------------------------------------------------ */

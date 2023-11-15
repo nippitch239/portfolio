@@ -1,0 +1,65 @@
+.sectionHome {
+
+  /* background: #000; */
+  .grids {
+    display: flex;
+    flex-direction: column;
+    .flexclient{
+     scale: 80%;
+        & a{
+            text-decoration: none;
+            color: rgb(49, 49, 49);
+        }
+    }
+    .clientbox{
+    & ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      & li {
+        margin: 0 0.2em;
+        & img {
+          width: 1.5em;
+          height: 1.5em;
+        }
+      }
+    }
+  }
+}
+  .Box1 {
+    margin: 7em 0 2em;
+    .boxtextS {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .header {
+        font-size: 3em;
+        text-transform: capitalize;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+      }
+    }
+    .boximg {
+      margin: 2em 0 0;
+    }
+  }
+  .Box2 {
+    .boxtext2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .boxdds {
+      width: 17em;
+    text-align: center;          
+    }
+    }
+  }
+}

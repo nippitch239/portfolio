@@ -1,0 +1,316 @@
+nav.nav {
+  width: 100%;
+  position: fixed;
+  margin: 3em 64% 2em;
+  z-index: 9;
+  & ul {
+    display: flex;
+    flex-direction: row;
+    & li {
+      list-style: none;
+      padding: 0 0.5em;
+    }
+    & a {
+      text-decoration: none;
+      color: #77b6f1;
+      & p {
+        font-size: 1.08em;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+  nav.nav {
+    margin: 1em auto; /* Center the navigation */
+  }
+
+  nav.nav ul {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  nav.nav li {
+    padding: 1em 0; /* Add more spacing between items */
+  }
+
+  .HomeBox {
+    width: 100%; /* Full width for the HomeBox */
+  }
+
+  .boxUnder {
+    width: auto; /* Adjust the width for responsiveness */
+  }
+}
+
+}
+
+.boxForline {
+  position: relative;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  background-color: #e450d0;
+}
+.boxUnder {
+  position: absolute;
+  width: 7em;
+  height: auto;
+  /* background: #000; */
+  /* display: none; */
+  flex-direction: column;
+  align-items: end;
+  cursor: default;
+  margin: 1em 0;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  & ul {
+    /* transform: translate(-40%, 30%); */
+    display: flex;
+    flex-direction: column;
+  }
+  & li {
+    text-align: end;
+    margin: 1em 0 0em 0;
+    transform: translate(-50%, 0);
+  }
+}
+
+.boxtextNav {
+  display: flex;
+  flex-direction: row;
+  & p {
+    cursor: pointer;
+  }
+}
+
+.line {
+  width: 0.13em;
+  height: 1.5em;
+  transform: translate(0.3em, 0);
+  background-color: var(--color-default);
+  transition: height 0.3s ease;
+}
+
+.HomeA {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+}
+.HomeBox {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #ff1818; */
+  width: 5%;
+  position: relative;
+}
+
+.HomeBox:hover .line {
+  height: 6em;
+  transition: height 1s ease;
+}
+
+.HomeBox:not(:hover) .line {
+  height: 1.5em;
+  transition: height 1s ease;
+}
+
+.HomeBox:hover .boxUnder,
+.boxUnder:hover .boxUnder {
+  /* display: flex; */
+  opacity: 1;
+}
+
+.HomeBox:hover .boxUnder {
+  opacity: 1; /* Make .boxUnder slowly appear when hovering */
+}
+
+.certi-transform {
+  transform: translate(-2em, 0);
+}
+
+.asd {
+  margin-bottom: 0.5em;
+}
+
+/* nav */
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  /* background-color: #fff; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #4babeb;
+  font-weight: 500;
+  padding: 0.7rem;
+}
+
+.nav-container .ParenNav{
+  font-size: 2.5em;
+}
+.nav-container .ChildNav{
+  font-size: 2em;
+}
+
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  /* height: 60px; */
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  /* height: 100vh; */
+  width: 100%;
+  height: 10000%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  /* margin-left: -40px; */
+  /* padding-left: 50px; */
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background: #ecececce;
+  z-index: 14;
+  backdrop-filter: blur(4px);
+
+}
+
+.navbar .menu-items li {
+  margin: 1rem 0 5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+  
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .A {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+
+.LiFlexHome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 1.5em;
+}
+
+.lineHome{
+  width: 3em;
+  height: .15em;
+  background-color: #78beff;
+}
+
+.flexarrow{
+  display: flex;    
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.A {
+  position: absolute;
+  transform: translateX(-150%);
+  z-index: 20;
+  transition: transform 0.5s ease-in-out;
+  
+  & ul {
+    margin: 0 0 0 4em;
+    & li {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
