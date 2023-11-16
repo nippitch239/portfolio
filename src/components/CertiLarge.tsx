@@ -18,6 +18,7 @@ function CertiLarge() {
         <div className="boxtext">
           <p>certificate</p>
         </div>
+        <div id="COMPETITION"></div>
         <ImageSourceLarge
           images={images}
           certificateText={
@@ -27,6 +28,7 @@ function CertiLarge() {
             </>
           }
         />
+        <div id="COMPLETION"></div>
         <ImageSourceLarge
           images={images2}
           certificateText={
@@ -36,6 +38,7 @@ function CertiLarge() {
             </>
           }
         />
+        <div id="ACADEMIC"></div>
         <ImageSourceLarge
           images={images3}
           certificateText={

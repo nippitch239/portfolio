@@ -56,7 +56,7 @@ function NavMinWidth() {
                           <p>Certificate</p>
                         </Link>
                         <Link onClick={allfcScro} to="/Picture">
-                          <p>Gallery</p>
+                          <p>Portfolio</p>
                         </Link>
                       </>
                     ) : isCertificatePage ? (
@@ -65,7 +65,7 @@ function NavMinWidth() {
                           <p>Home</p>
                         </Link>
                         <Link onClick={allfcScro} to="/Picture">
-                          <p>Gallery</p>
+                          <p>Portfolio</p>
                         </Link>
                       </>
                     ) : (
@@ -94,7 +94,7 @@ function NavMinWidth() {
                       : isCertificatePage
                       ? "Certificate"
                       : isPicturePage
-                      ? "Picture"
+                      ? "Portfolio"
                       : defaultPage
                       ? "Home"
                       : "Home"}
@@ -113,7 +113,7 @@ function NavMinWidth() {
                     <a href="#COMPETITION">Competition</a>
                   ) : (
                     isPicturePage && (
-                      <a href="#COMPETITION">Collection Certificate</a>
+                      <a href="#COMPETITION"></a>
                     )
                   )}
                 </a>
@@ -125,7 +125,7 @@ function NavMinWidth() {
                   ) : isCertificatePage ? (
                     <a href="#COMPLETION">Completion</a>
                   ) : (
-                    isPicturePage && <a href="">Collection Certificate</a>
+                    isPicturePage && <a href=""></a>
                   )}
                 </a>
               </li>
@@ -136,7 +136,7 @@ function NavMinWidth() {
                   ) : isCertificatePage ? (
                     <a href="#ACADEMIC">Academic</a>
                   ) : (
-                    isPicturePage && "Collection Certificate"
+                    isPicturePage && ""
                   )}
                 </a>
               </li>
@@ -145,7 +145,7 @@ function NavMinWidth() {
                   {defaultPage ? (
                     <a href="#pageFive">Contact</a>
                   ) : (
-                    isPicturePage && "Collection Certificate"
+                    isPicturePage && ""
                   )}
                 </a>
               </li>

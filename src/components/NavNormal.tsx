@@ -27,7 +27,7 @@ function NavNormal() {
                   : isCertificatePage
                   ? "Certificate"
                   : isPicturePage
-                  ? "Picture"
+                  ? "Portfolio"
                   : defaultPage
                   ? "Home"
                   : "Home"}
@@ -45,7 +45,7 @@ function NavNormal() {
                   <li>
                     {defaultPage && (
                       <Link to="/Picture">
-                        <p>Picture</p>
+                        <p>Portfolio</p>
                       </Link>
                     )}
                   </li>
@@ -59,7 +59,7 @@ function NavNormal() {
                   <li>
                     {isCertificatePage && (
                       <Link to="/Picture">
-                        <p>Picture</p>
+                        <p>Portfolio</p>
                       </Link>
                     )}
                   </li>
@@ -94,7 +94,7 @@ function NavNormal() {
             </a>
           ) : (
             <a href="">
-              <p>MySelf</p>
+              <p></p>
             </a>
           )}
         </li>
@@ -109,7 +109,7 @@ function NavNormal() {
             </a>
           ) : (
             <a href="#">
-              <p>Grid Certificate</p>
+              <p></p>
             </a>
           )}
         </li>
@@ -124,7 +124,7 @@ function NavNormal() {
             </a>
           ) : (
             <a href="#">
-              <p>Image</p>
+              <p></p>
             </a>
           )}
         </li>

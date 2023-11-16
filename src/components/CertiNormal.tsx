@@ -5,10 +5,7 @@ import "../styles/Certi.css";
 
 import { images, images2, images3 } from "./../assets/AssetCerti";
 
-
 function CertiNormal() {
-  
-
   return (
     <>
       <section className="Navbar2">
@@ -19,6 +16,7 @@ function CertiNormal() {
         <div className="boxtext">
           <p>certificate</p>
         </div>
+        <div id="COMPETITION"></div>
         <ImageSourceLarge
           images={images}
           certificateText={
@@ -28,6 +26,7 @@ function CertiNormal() {
             </>
           }
         />
+        <div id="COMPLETION"></div>
         <ImageSourceLarge
           images={images2}
           certificateText={
@@ -37,6 +36,7 @@ function CertiNormal() {
             </>
           }
         />
+        <div id="ACADEMIC"></div>
         <ImageSourceLarge
           images={images3}
           certificateText={

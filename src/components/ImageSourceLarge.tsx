@@ -17,7 +17,7 @@ function ImageSourceMedium({ images, certificateText }: ImageGalleryProps) {
   };
 
   const imageStyleS = {
-    transform: `translateX(-${currentImage * 100}%)`,
+    transform: `translateX(-${currentImage * 96}%)`,
   };
 
   return (

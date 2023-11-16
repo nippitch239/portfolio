@@ -20,8 +20,8 @@ function CertiMedium() {
         <div className="boxtext">
           <p>certificate</p>
         </div>
+        <div id="COMPETITION"></div>
         <ImageSourceMedium
-          
           images={images}
           certificateText={
             <>
@@ -30,6 +30,7 @@ function CertiMedium() {
             </>
           }
         />
+        <div id="COMPLETION"></div>
         <ImageSourceMedium
           images={images2}
           certificateText={
@@ -39,6 +40,7 @@ function CertiMedium() {
             </>
           }
         />
+        <div id="ACADEMIC"></div>
         <ImageSourceMedium
           images={images3}
           certificateText={
