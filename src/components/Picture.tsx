@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import "../styles/Picture.css"
+import "../styles/Picture.css";
 function Picture() {
   return (
     <>
@@ -14,8 +14,17 @@ function Picture() {
           frameBorder="0"
           
         ></iframe> */}
-        <iframe
+        {/* <iframe
           src="https://online.anyflip.com/zqjpu/zuxk/index.html"
+          frameBorder="0"
+          allowTransparency
+          allowFullScreen
+          seamless
+          width="1280"
+          height="720"
+        ></iframe> */}
+        <iframe
+          src="https://online.anyflip.com/zqjpu/pueu/index.html"
           frameBorder="0"
           allowTransparency
           allowFullScreen
